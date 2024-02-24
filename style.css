@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat",sans-serif;
+}
+
+body{
+    color: rgb(33, 105, 48);
+}
+
+header {
+    background-color: rgb(131, 198, 148);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+header nav a {
+    color: white;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+}
+
+#start {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0px 80px 128px 80px;
+    position: relative;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+p {
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.button {
+    background-color: rgb(52, 163, 76);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}   
+
+.trasnpButton {
+    background-color: transparent;
+    padding: 16px 32px;
+    font-weight: 400;
+    text-underline-offset: 4px;
+    color:rgb(52, 163, 76);
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#services {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+#services li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+ #about-me {
+    background-color: rgb(236, 255, 239);
+    padding: 64px 80px;
+    text-align: center;    
+ }
+
+ #about-me img {
+    margin: 30px auto;
+ }
+
+ #about-me p {
+    max-width: 950px;
+    margin: 0 auto;
+ }
+
+ #faq {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+ }
+
+ .doubt {
+    position: relative;
+ }
+
+ .doubt h3 {
+    border: 2px solid rgb(60, 113, 73);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+    font-size: 18px;
+ }
+
+ .doubt img {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+ }
+
+ .doubt p {
+    border-bottom: 1px solid rgb(60, 113, 73) ;
+    border-left: 1px solid rgb(60, 113, 73);
+    border-right: 1px solid rgb(60, 113, 73);
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.2s;
+ }
+
+.doubt.active p {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+ footer {
+    background-color: rgba(131, 198, 148, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 40px 60px;
+ }
+
+ footer img, 
+ footer .title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+ }
+
+ footer nav a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    max-width: 350px;
+
+ }
+
+footer p {
+    margin-bottom: 10px; 
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #start {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+     }
+
+    .absolute {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        }
+    #services {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    #faq {
+        flex-direction: column;
+    }
+    } 
+
+
+
